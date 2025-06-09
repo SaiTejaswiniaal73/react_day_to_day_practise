@@ -33,14 +33,13 @@
 //     const data=200
 //     return (
 //       <div>
-        
+
 //         {/* {
 //           this.state.map((x)=>{
 //             return(
 //                 <h1>{x}</h1>
 //             )
 
-            
 //         })
 //         } */}
 //       <h1>{data}</h1>
@@ -50,7 +49,7 @@
 //               <>
 //               <h1><span>Name:</span>{x.name}</h1>
 //               </>
-              
+
 //             )
 //           })
 //         }
@@ -63,21 +62,57 @@
 // export default App;
 
 //basic class syntax
-import React from "react"
+// import React from "react"
+// import Child from "./Child";
+// class App extends React.Component{
+//   constructor(){
+//     super();
+//     this.state={
+//       id:1,name:"padama",age:23
+//     }
+//   }
+//   render(){
+//     return(
+//       <div>
+//         <Child abc={this.state}/>
+//       </div>
+//     )
+//   }
+// }
+// export default App
+
+import React from "react";
 import Child from "./Child";
-class App extends React.Component{
-  constructor(){
+class App extends React.Component {
+  constructor() {
     super();
-    this.state={
-      id:1,name:"padama",age:23
-    }
+    this.state = {
+      count: 0,
+      name:"teja"
+    };
   }
-  render(){
-    return(
+  handleIncrement = () => {
+    // alert("hello ther + clicked");
+    this.setState({count:this.state.count + 1})//updater function for state
+  };
+  handleDecrement = () => {
+    // alert("helo - clicked");
+    this.setState({count:this.state.count - 1}
+     
+    )//updater function for state
+  };
+  render() {
+    return (
       <div>
-        <Child abc={this.state}/>
+        {/* <button onClick={()=>{
+          this.state.name
+        }}>MyName</button> */}
+        {/* <Child abc={this.state}/> */}
+        <button onClick={this.handleDecrement}  disabled={this.state.count==0}>-</button>
+        <h1>{this.state.count}</h1>
+        <button onClick={this.handleIncrement}  disabled={this.state.count==10}>+</button>
       </div>
-    )
+    );
   }
 }
-export default App
+export default App;
