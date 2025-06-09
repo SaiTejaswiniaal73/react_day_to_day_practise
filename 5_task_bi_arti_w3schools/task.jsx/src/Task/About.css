@@ -1,0 +1,34 @@
+.aboutchild {
+  background-color: antiquewhite;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: x-large;
+}
+.Child1 {
+  background-color: whitesmoke;
+  margin-top: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: larger;
+  gap: 10px;
+}
+.personContainer {
+  grid-template-columns: repeat(auto-fill,minmax(300,1fr));
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: lightcoral;
+  gap:20px;
+  border: 2px solid black;
+}
+.person{
+    border: 2px solid black;
+}
+.person>img {
+    width: 100%;
+}
+.person >button{
+    /* display: block !important; */
+    width :100%;
+    padding: 4px;
+    gap: 5px;
+}

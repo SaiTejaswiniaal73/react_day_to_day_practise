@@ -1,0 +1,30 @@
+ {
+      teacher_name: "Priya Joshi",
+      age: 29,
+      rating: 5,
+      college_Name: "University of Madras",
+    },
+    {
+      teacher_name: "Vikram Rao",
+      age: 41,
+      rating: 3,
+      college_Name: "Osmania University",
+    },
+    {
+      teacher_name: "Sneha Reddy",
+      age: 35,
+      rating: 4,
+      college_Name: "Pune University",
+    },
+    {
+      teacher_name: "Rajesh Kumar",
+      age: 27,
+      rating: 5,
+      college_Name: "University of Mumbai",
+    },
+    {
+      teacher_name: "Divya Nair",
+      age: 31,
+      rating: 4,
+      college_Name: "Christ University",
+    },

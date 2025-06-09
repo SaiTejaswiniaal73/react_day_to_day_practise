@@ -1,0 +1,23 @@
+#contact{
+    background-color:rebeccapurple;
+    width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+
+}
+#contact >#inputs {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    margin-bottom: 2rem;
+}
+#contact >#inputs >input{
+    padding: 10px 0 ;
+}
+#contact >#btn
+{
+    background-color:red;
+    display: inline;
+    color: blueviolet;
+
+}
