@@ -81,38 +81,51 @@
 // }
 // export default App
 
-import React from "react";
-import Child from "./Child";
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      count: 0,
-      name:"teja"
-    };
-  }
-  handleIncrement = () => {
-    // alert("hello ther + clicked");
-    this.setState({count:this.state.count + 1})//updater function for state
-  };
-  handleDecrement = () => {
-    // alert("helo - clicked");
-    this.setState({count:this.state.count - 1}
+// import React from "react";
+// import Child from "./Child";
+// class App extends React.Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       count: 0,
+//       name:"teja"
+//     };
+//   }
+//   handleIncrement = () => {
+//     // alert("hello ther + clicked");
+//     this.setState({count:this.state.count + 1})//updater function for state
+//   };
+//   handleDecrement = () => {
+//     // alert("helo - clicked");
+//     this.setState({count:this.state.count - 1}
      
-    )//updater function for state
-  };
-  render() {
-    return (
-      <div>
-        {/* <button onClick={()=>{
-          this.state.name
-        }}>MyName</button> */}
-        {/* <Child abc={this.state}/> */}
-        <button onClick={this.handleDecrement}  disabled={this.state.count==0}>-</button>
-        <h1>{this.state.count}</h1>
-        <button onClick={this.handleIncrement}  disabled={this.state.count==10}>+</button>
-      </div>
-    );
-  }
+//     )//updater function for state
+//   };
+//   render() {
+//     return (
+//       <div>
+//         {/* <button onClick={()=>{
+//           this.state.name
+//         }}>MyName</button> */}
+//         {/* <Child abc={this.state}/> */}
+//         <button onClick={this.handleDecrement}  disabled={this.state.count==0}>-</button>
+//         <h1>{this.state.count}</h1>
+//         <button onClick={this.handleIncrement}  disabled={this.state.count==10}>+</button>
+//       </div>
+//     );
+//   }
+// }
+// export default App;
+
+import React from 'react'
+import App2 from './App2'
+
+const App = () => {
+  return (
+    <div>
+      <App2/>
+    </div>
+  )
 }
-export default App;
+
+export default App
