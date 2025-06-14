@@ -1,0 +1,79 @@
+.contact-section {
+  /* background-color: #f1f1f1; */
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+  /* text-align: center; */
+}
+
+.line {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+.contact-subtext {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  /* text-align: center; */
+}
+
+.form-box {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid black; /* full black border */
+  background: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #000;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: black;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1;
+}

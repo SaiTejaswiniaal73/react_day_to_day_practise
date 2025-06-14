@@ -147,3 +147,140 @@
 //     }
 // }
 // export default App2
+
+// example 3
+// theme toggler
+// import React from "react"
+// class App2 extends React.Component{
+//     constructor(){
+//         super()
+//         this.state={
+//             isTheme:false
+//         }
+//     }
+//     handleTheme=()=>{
+//         this.setState({isTheme:!this.state.isTheme})
+//     }
+//     render(){
+//         return(
+//            <div
+//         style={{
+//           backgroundColor:this.state.isTheme ?"black":"white",
+//           width: "100%",
+//           height: "90vh",
+//           display: "flex",
+//           justifyContent: "center",
+//           alignItems: "center",
+//         }}
+//       >
+//         {/* <h1>{this.state.quote}</h1> */}
+//         <button onClick={this.handleTheme}>Theme Toggle</button>
+//       </div>
+//         )
+//     }
+// }
+// export default App2
+
+
+// sign up fomr toggle
+
+// signup form toggle
+
+import React from "react";
+class App2 extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      isShow: false,
+    };
+  }
+
+  handleShowSignUp = () => {
+    this.setState({isShow:!this.state.isShow})
+  };
+
+  render() {
+    return (
+      <div
+        style={{
+          backgroundColor: this.state.isTheme ? "black" : "white",
+          width: "100%",
+          height: "90vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <button onClick={this.handleShowSignUp}>signup</button>
+
+        {this.state.isShow && (
+          <form>
+            <input />
+          </form>
+        )}
+      </div>
+    );
+  }
+}
+export default App2;
+
+
+
+// import React, { Component } from 'react';
+// import './App.css';  // Importing the CSS file
+
+
+// class TabNavigation extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       activeTab: 'home'
+//     };
+//   }
+
+
+//   setActiveTab = (tab) => {
+//     this.setState({ activeTab: tab });
+//   };
+
+
+//   render() {
+//     const { activeTab } = this.state;
+
+
+//     return (
+//       <div className="tab-container">
+//         <div>
+//           <div
+//             className={`tab ${activeTab === 'home' ? 'active-tab' : ''}`}
+//             onClick={() => this.setActiveTab('home')}
+//           >
+//             Home
+//           </div>
+//           <div
+//             className={`tab ${activeTab === 'about' ? 'active-tab' : ''}`}
+//             onClick={() => this.setActiveTab('about')}
+//           >
+//             About
+//           </div>
+//           <div
+//             className={`tab ${activeTab === 'contact' ? 'active-tab' : ''}`}
+//             onClick={() => this.setActiveTab('contact')}
+//           >
+//             Contact
+//           </div>
+//         </div>
+
+
+//         <div className="content">
+//           {activeTab === 'home' && <h3>Welcome to the Home Tab</h3>}
+//           {activeTab === 'about' && <h3>About Us: We are awesome!</h3>}
+//           {activeTab === 'contact' && <h3>Contact Us at: contact@company.com</h3>}
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+
+
+// export default TabNavigation;
