@@ -20,6 +20,19 @@
 // }
 // export default App;
 
+// ✅ Correct
+import React from "react";
+
+function App() {
+  return (
+    <div>
+      <h1></h1>
+    </div>
+  );
+}
+
+export default App; // <-- Make sure this line exists
+
 // import React from "react";
 // class App extends React.Component {
 //   constructor() {
@@ -117,15 +130,15 @@
 // }
 // export default App;
 
-import React from 'react'
-import App2 from './App2'
+// import React from 'react'
+// import App2 from './App2'
 
-const App = () => {
-  return (
-    <div>
-      <App2/>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <App2/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
